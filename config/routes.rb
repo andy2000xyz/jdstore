@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
+  resources :comments
   devise_for :users
+  root 'welcome#index'
 
   namespace :admin do
     resources :products
@@ -17,8 +18,10 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
-    end
+    end  
+    resources :comments
   end
+
 
   resources :carts do
    collection do
@@ -41,7 +44,7 @@ Rails.application.routes.draw do
     resources :orders
   end
 
-  root 'products#index'
+
 end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

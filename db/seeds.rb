@@ -16,37 +16,37 @@ u.password_confirmation = "123456"   # 最少要六码
 u.is_admin = true
 u.save
 
-products = [{title:"华为",
+products = [{title:"Fashion",
 	        description: "This Certified Refurbished product has been tested and certified
 	              to work and look like new, with minimal to no signs of wear, by a specialized
 	              third-party seller approved by Amazon. The product is backed by a minimum 90-day warranty,
 	              and may arrive in a generic brown or white box. Accessories may be generic and not directly
 	              from the manufacturer.",
-	        image_path: "#{Rails.root}/app/assets/images/华为.jpg"},
+	        image_path: "#{Rails.root}/public/images/fashion-1.jpg"},
 
-	        {title:"魅族",
+	        {title:"Events",
 	        description: "This Certified Refurbished product has been tested and certified
 	              to work and look like new, with minimal to no signs of wear, by a specialized
 	              third-party seller approved by Amazon. The product is backed by a minimum 90-day warranty,
 	              and may arrive in a generic brown or white box. Accessories may be generic and not directly
 	              from the manufacturer.",
-	        image_path: "#{Rails.root}/app/assets/images/魅族.jpg"},
+	        image_path: "#{Rails.root}/public/images/event-1.jpg"},
 
-          {title:"荣耀8",
+          {title:"Nature",
 	        description: "This Certified Refurbished product has been tested and certified
 	              to work and look like new, with minimal to no signs of wear, by a specialized
 	              third-party seller approved by Amazon. The product is backed by a minimum 90-day warranty,
 	              and may arrive in a generic brown or white box. Accessories may be generic and not directly
 	              from the manufacturer.",
-	        image_path: "#{Rails.root}/app/assets/images/荣耀8.jpg"},
+	        image_path: "#{Rails.root}/public/images/nature-1.jpg"},
 
-          {title:"小米5",
+          {title:"Model",
 	        description: "This Certified Refurbished product has been tested and certified
 	              to work and look like new, with minimal to no signs of wear, by a specialized
 	              third-party seller approved by Amazon. The product is backed by a minimum 90-day warranty,
 	              and may arrive in a generic brown or white box. Accessories may be generic and not directly
 	              from the manufacturer.",
-	        image_path: "#{Rails.root}/app/assets/images/小米5.jpg"}]
+	        image_path: "#{Rails.root}/public/images/model-1.jpg"}]
 
 p1 = Product.create([title:products[0][:title],description:products[0][:description],quantity:20,price:3000,image:open(products[0][:image_path])])
 p2 = Product.create([title:products[1][:title],description:products[1][:description],quantity:20,price:3000,image:open(products[1][:image_path])])

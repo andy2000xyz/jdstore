@@ -18,11 +18,17 @@
  @import "bootstrap";
  @import "font-awesome";
 
-
+ nav{
+ width:auto;/*撑满*/
+ height:35px;
+ background:#CCC;/*为了便于查看区域范围大小，故而加个背景色*/
+ margin:0 auto;/*水平居中*/
+ margin-top:15px;/*顶部15px*/
+ }
 
  body {
  	padding: 0;
- 	margin: 0;
+ 	margin: -15px;
  	background: #FFF;
  	font-family: 'Open Sans', sans-serif;
  }
@@ -701,7 +707,7 @@
  	padding: 100px 0;
  }
 
- #skills h3 {
+ skills h3 {
  	text-align: left;
  	margin-bottom: 30px;
  	font-size: 40px;
@@ -710,7 +716,7 @@
 
  	/*-- Progress-Bar --*/
 
- 	#about-us .lead {
+ 	about-us .lead {
  		font-family: 'Montserrat', sans-serif;
  		font-size: 16px;
  		margin-bottom: 5px;
@@ -1368,14 +1374,3 @@
 
 
  /*-- //Index-Page-Styling --*/
-
-
-
-
-
-
-
-
-
-
- 
